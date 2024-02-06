@@ -88,6 +88,12 @@ Aclaration: For the design I wasn't sure about to follow the exact design showed
 
 This package is intended to be publishable on `npm`. The idea is to installed in all the projects you need as an external package. There is more work to do on this step but I put the idea on paper since the start.
 
+## Code-quality
+
+Husky and eslint were added in conjuction with prettier configuration. 
+This will ensure before commiting your work test and linters should be passed.
+And in consecuence, modern rules for coding should be followed correctly as well.
+
 
 This setup includes:
 
