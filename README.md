@@ -3,7 +3,7 @@
 How to set up
 
 ```sh
-git clone https://github.com/yourusername/react-stepper-mr-hunt.git
+git clone https://github.com/YeisonHunt/not_found_stepper
 ```
 Then
 
