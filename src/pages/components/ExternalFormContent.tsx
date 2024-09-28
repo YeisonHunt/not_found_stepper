@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function ExternalFormContent() {
   return (
@@ -16,7 +16,7 @@ export default function ExternalFormContent() {
             height="10"
             patternUnits="userSpaceOnUse"
           >
-            <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+            <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3" />
           </pattern>
         </defs>
         <rect
@@ -24,7 +24,7 @@ export default function ExternalFormContent() {
           fill="url(#pattern-1526ac66-f54a-4681-8fb8-0859d412f251)"
           width="100%"
           height="100%"
-        ></rect>
+        />
       </svg>
 
       <div className="p-6">
@@ -44,46 +44,46 @@ export default function ExternalFormContent() {
             </svg>
           </div>
           <div className="w-full">
-            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[480px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[440px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
+            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4" />
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[480px] mb-2.5" />
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5" />
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[440px] mb-2.5" />
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5" />
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]" />
           </div>
           <span className="sr-only">Loading...</span>
         </div>
 
         <div role="status" className="space-y-2.5 animate-pulse max-w-lg pt-4">
           <div className="flex items-center w-full">
-            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
-            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
-            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32" />
+            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-24" />
+            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-full" />
           </div>
           <div className="flex items-center w-full max-w-[480px]">
-            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-full"></div>
-            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
-            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
+            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-full" />
+            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-full" />
+            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-24" />
           </div>
           <div className="flex items-center w-full max-w-[400px]">
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
-            <div className="h-2.5 ms-2 bg-gray-200 rounded-full dark:bg-gray-700 w-80"></div>
-            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full" />
+            <div className="h-2.5 ms-2 bg-gray-200 rounded-full dark:bg-gray-700 w-80" />
+            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-full" />
           </div>
           <div className="flex items-center w-full max-w-[480px]">
-            <div className="h-2.5 ms-2 bg-gray-200 rounded-full dark:bg-gray-700 w-full"></div>
-            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
-            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
+            <div className="h-2.5 ms-2 bg-gray-200 rounded-full dark:bg-gray-700 w-full" />
+            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-full" />
+            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-24" />
           </div>
           <div className="flex items-center w-full max-w-[440px]">
-            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-32"></div>
-            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
-            <div className="h-2.5 ms-2 bg-gray-200 rounded-full dark:bg-gray-700 w-full"></div>
+            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-32" />
+            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-24" />
+            <div className="h-2.5 ms-2 bg-gray-200 rounded-full dark:bg-gray-700 w-full" />
           </div>
           <div className="flex items-center w-full max-w-[360px]">
-            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
-            <div className="h-2.5 ms-2 bg-gray-200 rounded-full dark:bg-gray-700 w-80"></div>
-            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-full" />
+            <div className="h-2.5 ms-2 bg-gray-200 rounded-full dark:bg-gray-700 w-80" />
+            <div className="h-2.5 ms-2 bg-gray-300 rounded-full dark:bg-gray-600 w-full" />
           </div>
         </div>
       </div>

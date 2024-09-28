@@ -1,34 +1,36 @@
-import { useState } from "react";
-import "./stepper.css";
+import { useState } from 'react';
+import './stepper.css';
 
-import Step from "./Step";
-import StepButton from "./StepButton";
-import StepStatus from "./StepStatus";
-import StepProgress from "./StepProgress";
-import Congratulations from "./Congratulations";
-import ExternalFormContent from "../ExternalFormContent";
-import { stepsPerPage, Step as StepType, StepState } from "./shared/constants";
+import Step from './Step';
+import StepButton from './StepButton';
+import StepStatus from './StepStatus';
+import StepProgress from './StepProgress';
+import Congratulations from './Congratulations';
+import ExternalFormContent from '../ExternalFormContent';
+import { stepsPerPage, Step as StepType, StepState } from './shared/constants';
 
-const Stepper = ({ externalSteps} : { externalSteps:StepType[] }) => {
-  //State management
+function Stepper({ externalSteps }: { externalSteps: StepType[] }) {
+  // State management
   const [stepsState, setStepsState] = useState<StepType[]>(externalSteps);
-  const currentStepIndex = stepsState.findIndex(step => step.state === 'completed');
-  const [currentStep, setCurrentStep] = useState(currentStepIndex +2 || 1);
+  const currentStepIndex = stepsState.findIndex(
+    (step) => step.state === 'completed'
+  );
+  const [currentStep, setCurrentStep] = useState(currentStepIndex + 2 || 1);
   const [currentPage, setCurrentPage] = useState(0);
   const [complete, setComplete] = useState(false);
 
-  //Handler functions
+  // Handler functions
   const handleNext = () => {
     if (currentStep >= stepsState.length) {
       setComplete(true);
-      let newState: StepType[] = stepsState.map((step, i) => ({
+      const newState: StepType[] = stepsState.map((step, i) => ({
         ...step,
         complete: i + 1 <= currentStep,
       }));
       setStepsState(newState);
     } else {
       setCurrentStep((prev) => prev + 1);
-      let newState: StepType[] = stepsState.map((step, i) =>
+      const newState: StepType[] = stepsState.map((step, i) =>
         i + 1 <= currentStep ? { ...step, state: StepState.Completed } : step
       );
       setStepsState(newState);
@@ -83,7 +85,7 @@ const Stepper = ({ externalSteps} : { externalSteps:StepType[] }) => {
         <StepButton
           disabled={currentStep > stepsState.length && !complete}
           onClick={handleNext}
-          label={currentStep === stepsState.length ? "Finish" : "Next"}
+          label={currentStep === stepsState.length ? 'Finish' : 'Next'}
         />
         <StepStatus currentStep={currentStep} totalSteps={stepsState.length} />
         <StepProgress
@@ -93,6 +95,6 @@ const Stepper = ({ externalSteps} : { externalSteps:StepType[] }) => {
       </div>
     </>
   );
-};
+}
 
 export default Stepper;

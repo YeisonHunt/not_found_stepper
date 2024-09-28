@@ -1,7 +1,7 @@
-import { TiTick } from "react-icons/ti";
-import { StepState, Step as StepType } from "./shared/constants";
+import { TiTick } from 'react-icons/ti';
+import { StepState, Step as StepType } from './shared/constants';
 
-const Step = ({
+function Step({
   step,
   stepNumber,
   currentStep,
@@ -9,18 +9,20 @@ const Step = ({
   step: StepType;
   stepNumber: number;
   currentStep: number;
-}) => (
-  <div
-    className={`step-item  ${currentStep === stepNumber && "active"} ${
-      step.state === StepState.Completed && "complete"
-    } `}
-  >
-    <div className="step ">
-      {step.state === StepState.Completed ? <TiTick size={24} /> : stepNumber}
-    </div>
+}) {
+  return (
+    <div
+      className={`step-item  ${currentStep === stepNumber && 'active'} ${
+        step.state === StepState.Completed && 'complete'
+      } `}
+    >
+      <div className="step ">
+        {step.state === StepState.Completed ? <TiTick size={24} /> : stepNumber}
+      </div>
 
-    <p className="text-gray-300">{step.type}</p>
-  </div>
-);
+      <p className="text-gray-300">{step.type}</p>
+    </div>
+  );
+}
 
 export default Step;

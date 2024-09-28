@@ -1,6 +1,12 @@
 import React from 'react';
 
-const StepProgress = ({ currentStep, totalSteps } : {currentStep: number, totalSteps: number}) => {
+function StepProgress({
+  currentStep,
+  totalSteps,
+}: {
+  currentStep: number;
+  totalSteps: number;
+}) {
   const percentageCompleted = ((currentStep / totalSteps) * 100).toFixed(0);
 
   return (
@@ -11,11 +17,9 @@ const StepProgress = ({ currentStep, totalSteps } : {currentStep: number, totalS
           className="h-4 bg-blue-500 rounded-full"
         />
       </div>
-      <p className="text-white text-lg ml-2">
-        {percentageCompleted}%
-      </p>
+      <p className="text-white text-lg ml-2">{percentageCompleted}%</p>
     </div>
   );
-};
+}
 
 export default StepProgress;
